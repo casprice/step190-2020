@@ -42,6 +42,16 @@ curl -X PUT localhost:8080/election
 ### Stop the local server
 Ctrl+C or Cmd+C.
 
+### Deploy the project
+You must first create a project on Google Cloud Platform and update the `<deploy.projectId>` element in the `pom.xml` file to match. 
+
+Then follow the instructions here: [https://github.com/googleinterns/step/blob/master/walkthroughs/week-2-web-development/portfolio-walkthrough.md#live-server](https://github.com/googleinterns/step/blob/master/walkthroughs/week-2-web-development/portfolio-walkthrough.md#live-server)
+
+You're done after you have successfully run the command
+```
+mvn package appengine:deploy
+```
+
 ### Run the tests
 ```
 mvn verify
